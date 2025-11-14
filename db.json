@@ -1,5 +1,12 @@
 {
   "users":[
-    
+    {
+      "id": 3,
+      "name": "Vlad",
+      "surname": "Berestovoy",
+      "boots": "Puma",
+      "color": ["gray","black","white"],
+      "price": 1000
+    }
   ]
 }
