@@ -1,6 +1,23 @@
 {
   "users":[
     {
+
+      "id": 1,
+      "name": "Misha",
+      "surname":"Krupchan",
+      "boots": "Puma",
+      "color": ["gray", "black", "white"],
+      "price": 1000     
+    },
+    {
+      "id": 2,
+      "name": "Kseniia",
+      "surname": "Dreval",
+      "boots": "Puma",
+      "color": ["grey","black","white"],
+      "price": 1000
+    }
+    ,{
       "id": 3,
       "name": "Vlad",
       "surname": "Berestovoy",
