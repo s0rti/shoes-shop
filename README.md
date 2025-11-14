@@ -1,1 +1,1 @@
-# boots-shop
+# shoes-shop
