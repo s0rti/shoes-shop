@@ -1,5 +1,12 @@
 {
   "users":[
-    
+    {
+      "id": 1,
+      "name": "Misha",
+      "surname":"Krupchan",
+      "boots": "Puma",
+      "color": ["gray", "black", "white"],
+      "price": 1000     
+    }
   ]
 }
