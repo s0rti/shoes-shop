@@ -7,16 +7,16 @@
       "boots": "Puma",
       "color": ["gray", "black", "white"],
       "price": 1000,
-        "picture": "https://images.puma.net/images/401683/13/sv01/fnd/UKR/" 
-    },
-    {
+      "picture": "https://images.puma.net/images/401683/13/sv01/fnd/UKR/" 
+    }
+    ,{
       "id": 2,
       "name": "Kseniia",
       "surname": "Dreval",
       "boots": "Puma",
       "color": ["grey","black","white"],
       "price": 1000,
-        "picture": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/389267/17/sv01/fnd/UKR/w/1000/h/1000/fmt/png"
+      "picture": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/389267/17/sv01/fnd/UKR/w/1000/h/1000/fmt/png"
     }
     ,{
       "id": 3,
@@ -25,7 +25,7 @@
       "boots": "Puma",
       "color": ["gray","black","white"],
       "price": 1000,
-              "picture": "https://vzutistore.com.ua/8361-large_default/puma-palermo-mauve-mist-mint.jpg"
+      "picture": "https://vzutistore.com.ua/8361-large_default/puma-palermo-mauve-mist-mint.jpg"
     }
-]
 
+]

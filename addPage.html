@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addPage.css">
+    <script src="addPage.js" defer></script>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px; margin-top: 200px;">
+        
+            <input type="text" class="input input__form" id="input__boots" placeholder="Boots" value="" required>
+            <input type="text" class="input input__form" id="input__color" placeholder="Color" value="" required>
+            <input type="text" class="input input__form" id="input__price" placeholder="Price" value="" required>
+            <input type="text" class="input input__form" id="input__picture" placeholder="Picture" value="" required>
+            <button class="button btn__form" type="submit" onclick="btnSubmit()">Submit</button>
+      
+    </div>
+
+    <div id="shoes-cards">
+
+        <div id="card">
+            <div id="card-bg">
+                <img src="https://images.puma.net/images/398846/09/sv01/fnd/UKR/" alt="shoes-photo" class="width-photo">
+                <div id="info-shoes">
+                    <p id="text-card-style">shoes model:</p>
+                    <p id="text-card-style">shoes colors:</p>
+                    <p id="text-card-style">shoes price:</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
