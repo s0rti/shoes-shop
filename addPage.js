@@ -1,27 +1,30 @@
-let form = document.getElementById("form");
-boots_array = [];
+
 
 function btnSubmit() {
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        let boots = {
-            input__boots: event.target['input__price'].value,
-            input__color: event.target['input__price'].value,
-            input__price: event.target['input__price'].value,
-        }
-        event.target.reset();
-        boots_array.push(boots);
-        console.log(boots_array);
-        createDownloadLink(boots);
-    });
-}
+    let boots = document.getElementById("input__boots").value;
+    let color = document.getElementById("input__color").value;
+    let price = document.getElementById("input__price").value;
+    let picture = document.getElementById("input__picture").value;
 
-function createDownloadLink(boots) {
-    let text = JSON.stringify(boots);
-    let link = document.createElement('a');
-    const json = JSON.stringify(boots, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    link.href = URL.createObjectURL(blob);
-    link.setAttribute('download', 'boots.json');
+const file_name = boots;
+const file_color = color;
+const file_price = price;
+
+        let boot = [{
+           boots: boots,
+           color: color,
+           price: price,
+           picture: picture
+        }];
+       const json = JSON.stringify(boot, null, 2);
+       const blob = new Blob([json], { type: 'application/json'} );
+       const link = document.createElement('a');
+       link.href = URL.createObjectURL(blob);
+       link.download = `${file_name.value}_${file_color.value}_${file_price.value}.json`;
+       link.click();
+
+       boots.value = "";
+       color.value = "";
+       price.value = "";
+       picture.value = "";
 }
