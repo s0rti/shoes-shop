@@ -1,5 +1,4 @@
-{
-  "users":[
+[
     {
 
       "id": 1,
@@ -26,7 +25,7 @@
       "boots": "Puma",
       "color": ["gray","black","white"],
       "price": 1000,
-       "picture": "https://vzutistore.com.ua/8361-large_default/puma-palermo-mauve-mist-mint.jpg"
+      "picture": "https://vzutistore.com.ua/8361-large_default/puma-palermo-mauve-mist-mint.jpg"
+
     }
   ]
-}
