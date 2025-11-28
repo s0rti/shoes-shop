@@ -1,32 +1,33 @@
-let url = "https://raw.githubusercontent.com/s0rti/shoes-shop/main/db.json";
-let response;
+let surl = "https://raw.githubusercontent.com/s0rti/shoes-shop/main/db.json";
 
-
-fetch(url)
-    .then(async function (res) {
+fetch(surl)
+    .then(async res => {
         let data = await res.json();
-
-        
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('there no such pokemon!');
-        }
-        return response.json();
-    })
-    .then(data => {
-        drawPokemon(data);
+        console.log(data);
+        drawCard(data);
     });
 
-function drawPokemon(pokemon) {
-    resultElement.innerHTML = `
-        <center><button class="btn" onclick="drawList()">Go back</button></center>
-        <div class = "pokemon">
-        <h1>${pokemon[`name`]}</h1>
-        <p>weight: ${pokemon.weight}</p>
-        <p>height: ${pokemon.height}</p>
-        <img src="${pokemon[`sprites`][`front_shiny`]}">
-        <p>${pokemon.abilities.map(a => a.ability.name).join(',')}
-        </div>
-        `
+function drawCard(data) {
+    const shows_card = document.getElementById("shows_card");
+    shows_card.innerHTML = "";
+
+    const shoes = Array.isArray(data) ? data : data.shoes;
+
+    shoes.forEach(shoe => {
+        const card = document.createElement('div');
+        card.classList.add('person-card');
+        card.innerHTML = `
+            <div id="card">
+                <div id="card-bg">
+                    <img src="${shoe.picture}" class="width-photo">
+                    <div id="info-shoes">
+                        <p id="text-card-style">boots: ${shoe.boots}</p>
+                        <p id="text-card-style">price: ${shoe.price}</p>
+                        <p id="text-card-style">color: ${shoe.color}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        shows_card.appendChild(card);
+    });
 }
