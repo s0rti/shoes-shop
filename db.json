@@ -8,8 +8,8 @@
       "color": ["gray", "black", "white"],
       "price": 1000,
       "picture": "https://images.puma.net/images/401683/13/sv01/fnd/UKR/" 
-    },
-    {
+    }
+    ,{
       "id": 2,
       "name": "Kseniia",
       "surname": "Dreval",
@@ -26,6 +26,6 @@
       "color": ["gray","black","white"],
       "price": 1000,
       "picture": "https://vzutistore.com.ua/8361-large_default/puma-palermo-mauve-mist-mint.jpg"
-
     }
-  ]
+
+]
